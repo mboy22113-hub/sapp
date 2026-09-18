@@ -1,0 +1,6 @@
+{
+  "name": "WHO KNOW",
+  "description": "WHO KNOW - Premium glassmorphic safety management frontend application tracking inception details, evidence, resolved incidents, and resolution time durations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

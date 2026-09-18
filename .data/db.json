@@ -1,0 +1,331 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-001",
+      "username": "Alex Admin",
+      "email": "admin@safetrack.dev",
+      "role": "ADMIN",
+      "department": "Safety & Compliance",
+      "createdAt": "2026-07-20T18:20:36.180Z"
+    },
+    {
+      "id": "usr-insp-002",
+      "username": "Ian Inspector",
+      "email": "inspector@safetrack.dev",
+      "role": "INSPECTOR",
+      "department": "Field Operations",
+      "createdAt": "2026-08-04T18:20:36.180Z"
+    },
+    {
+      "id": "usr-safe-003",
+      "username": "Sara Safety",
+      "email": "safety@safetrack.dev",
+      "role": "SAFETY_OFFICER",
+      "department": "EHS Risk Engineering",
+      "createdAt": "2026-08-19T18:20:36.180Z"
+    },
+    {
+      "id": "usr-resp-004",
+      "username": "Riley Repair",
+      "email": "responsible@safetrack.dev",
+      "role": "RESPONSIBLE_PERSON",
+      "department": "Mechanical Maintenance",
+      "createdAt": "2026-08-29T18:20:36.180Z"
+    },
+    {
+      "id": "usr_1789756271693",
+      "username": "test",
+      "email": "test@example.com",
+      "role": "Safety Officer",
+      "department": "Safety & Compliance",
+      "createdAt": "2026-09-18T18:31:11.693Z"
+    }
+  ],
+  "inceptions": [
+    {
+      "id": "INC-001001",
+      "title": "Boiler Room Steam Valve Leakage",
+      "description": "High pressure safety relief valve showing minor weeping and pressure fluctuation.",
+      "location": "Sector B - Thermal Plant",
+      "category": "Pressure Systems",
+      "classification": "High Risk",
+      "inspector": "Sara Safety",
+      "date": "2026-09-15",
+      "status": "Open",
+      "additionalDetails": "Immediate lock-out inspection initiated. Requires certified steam pipe technician.",
+      "evidenceFiles": [
+        {
+          "id": "ev-001",
+          "name": "valve_flange_leak.jpg",
+          "size": 245000,
+          "type": "image/jpeg",
+          "url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
+          "uploadedAt": "2026-09-15T18:20:36.180Z",
+          "category": "inspection_evidence",
+          "recordId": "INC-001001",
+          "recordType": "inception",
+          "uploadedBy": "Sara Safety"
+        }
+      ],
+      "durationSeconds": 0,
+      "createdAt": "2026-09-15T18:20:36.180Z",
+      "updatedAt": "2026-09-17T18:20:36.180Z"
+    },
+    {
+      "id": "INC-001002",
+      "title": "Unguarded Primary Conveyor Belt Tensioner",
+      "description": "Nip point guard removed during weekend motor servicing and not re-fastened.",
+      "location": "Assembly Line 3 - West Wing",
+      "category": "Machinery Guarding",
+      "classification": "Medium Risk",
+      "inspector": "Ian Inspector",
+      "date": "2026-09-12",
+      "status": "In Progress",
+      "additionalDetails": "Work order #W-984 issued to mechanical team to install interlocked guard.",
+      "evidenceFiles": [],
+      "durationSeconds": 0,
+      "createdAt": "2026-09-12T18:20:36.180Z",
+      "updatedAt": "2026-09-16T18:20:36.180Z"
+    },
+    {
+      "id": "INC-001003",
+      "title": "Corrosive Chemical Cabinet Ventilation Inadequacy",
+      "description": "Exhaust fan flow rate below 150 CFM required threshold in nitric acid storage area.",
+      "location": "Chemical Storage Vault 2",
+      "category": "Hazardous Materials",
+      "classification": "Critical",
+      "inspector": "Alex Admin",
+      "date": "2026-09-10",
+      "status": "Pending",
+      "additionalDetails": "Air testing verified trace vapors. Area evacuated and restricted.",
+      "evidenceFiles": [],
+      "durationSeconds": 0,
+      "createdAt": "2026-09-10T18:20:36.180Z",
+      "updatedAt": "2026-09-13T18:20:36.180Z"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC-002001",
+      "title": "Tripping Hazard along Loading Bay Dock 4",
+      "description": "Damaged expansion joint created a 2-inch uneven lip catching pallet jacks.",
+      "location": "Logistics Bay 4",
+      "originalDate": "2026-09-14",
+      "status": "Open",
+      "evidenceFiles": [],
+      "createdAt": "2026-09-14T18:20:36.180Z",
+      "updatedAt": "2026-09-14T18:20:36.180Z"
+    },
+    {
+      "id": "INC-002002",
+      "title": "Overloaded Electrical Multi-tap near CNC Station 2",
+      "description": "Daisy-chained surge protectors powering industrial coolants and auxiliary drills.",
+      "location": "Precision Machine Shop",
+      "originalDate": "2026-09-11",
+      "status": "In Progress",
+      "evidenceFiles": [],
+      "createdAt": "2026-09-11T18:20:36.180Z",
+      "updatedAt": "2026-09-16T18:20:36.180Z"
+    },
+    {
+      "id": "INC-000982",
+      "title": "Overheated Hydraulic Pump Unit 3",
+      "description": "Bearing friction temperature reached 92°C with hydraulic oil discoloration.",
+      "location": "Heavy Stamping Facility",
+      "originalDate": "2026-09-04",
+      "status": "Resolved",
+      "resolutionDate": "2026-09-06",
+      "resolutionDurationSeconds": 172800,
+      "resolvedBy": "Sara Safety",
+      "resolutionNotes": "Replaced sealed ceramic bearing, refreshed ISO VG 46 synthetic oil, and ran 4-hour thermal run-in test under 80% payload with maximum 58°C stable operating temp.",
+      "resolutionFiles": [
+        {
+          "id": "ev-res-001",
+          "name": "repaired_bearing_housing.jpg",
+          "size": 198000,
+          "type": "image/jpeg",
+          "url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80",
+          "uploadedAt": "2026-09-06T18:20:36.180Z",
+          "category": "resolution_evidence",
+          "recordId": "INC-000982",
+          "recordType": "incident",
+          "uploadedBy": "Sara Safety"
+        }
+      ],
+      "evidenceFiles": [],
+      "createdAt": "2026-09-04T18:20:36.180Z",
+      "updatedAt": "2026-09-06T18:20:36.180Z"
+    },
+    {
+      "id": "INC-000975",
+      "title": "Emergency Eye Wash Station Low Water Pressure",
+      "description": "Stagnant mineral buildup restricted dual spray nozzle output below 0.4 GPM.",
+      "location": "Quality Assurance Testing Lab",
+      "originalDate": "2026-08-27",
+      "status": "Resolved",
+      "resolutionDate": "2026-08-28",
+      "resolutionDurationSeconds": 86400,
+      "resolvedBy": "Ian Inspector",
+      "resolutionNotes": "Acid descaled supply piping, replaced aerator screens, and calibrated flow rate to 0.48 GPM certified to ANSI Z358.1.",
+      "resolutionFiles": [
+        {
+          "id": "ev-res-002",
+          "name": "eyewash_flow_calibration.png",
+          "size": 142000,
+          "type": "image/png",
+          "url": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80",
+          "uploadedAt": "2026-08-28T18:20:36.180Z",
+          "category": "resolution_evidence",
+          "recordId": "INC-000975",
+          "recordType": "incident",
+          "uploadedBy": "Ian Inspector"
+        }
+      ],
+      "evidenceFiles": [],
+      "createdAt": "2026-08-27T18:20:36.180Z",
+      "updatedAt": "2026-08-28T18:20:36.180Z"
+    },
+    {
+      "id": "INC-000961",
+      "title": "Exposed High-Voltage Electrical Wiring Junction",
+      "description": "Junction box cover dislodged due to forklift vibration in main transformer corridor.",
+      "location": "Substation 2 - Service Tunnel",
+      "originalDate": "2026-08-14",
+      "status": "Resolved",
+      "resolutionDate": "2026-08-16",
+      "resolutionDurationSeconds": 172800,
+      "resolvedBy": "Riley Repair",
+      "resolutionNotes": "De-energized circuit using LOTO procedure, installed NEMA 4X weather-sealed steel enclosure, and verified grounding continuity.",
+      "resolutionFiles": [
+        {
+          "id": "ev-res-003",
+          "name": "locked_junction_box.jpg",
+          "size": 310000,
+          "type": "image/jpeg",
+          "url": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80",
+          "uploadedAt": "2026-08-16T18:20:36.180Z",
+          "category": "resolution_evidence",
+          "recordId": "INC-000961",
+          "recordType": "incident",
+          "uploadedBy": "Riley Repair"
+        }
+      ],
+      "evidenceFiles": [],
+      "createdAt": "2026-08-14T18:20:36.180Z",
+      "updatedAt": "2026-08-16T18:20:36.180Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-001",
+      "name": "valve_flange_leak.jpg",
+      "size": 245000,
+      "type": "image/jpeg",
+      "url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
+      "uploadedAt": "2026-09-15T18:20:36.180Z",
+      "category": "inspection_evidence",
+      "recordId": "INC-001001",
+      "recordType": "inception",
+      "uploadedBy": "Sara Safety"
+    },
+    {
+      "id": "ev-res-001",
+      "name": "repaired_bearing_housing.jpg",
+      "size": 198000,
+      "type": "image/jpeg",
+      "url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80",
+      "uploadedAt": "2026-09-06T18:20:36.180Z",
+      "category": "resolution_evidence",
+      "recordId": "INC-000982",
+      "recordType": "incident",
+      "uploadedBy": "Sara Safety"
+    },
+    {
+      "id": "ev-res-002",
+      "name": "eyewash_flow_calibration.png",
+      "size": 142000,
+      "type": "image/png",
+      "url": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80",
+      "uploadedAt": "2026-08-28T18:20:36.180Z",
+      "category": "resolution_evidence",
+      "recordId": "INC-000975",
+      "recordType": "incident",
+      "uploadedBy": "Ian Inspector"
+    },
+    {
+      "id": "ev-res-003",
+      "name": "locked_junction_box.jpg",
+      "size": 310000,
+      "type": "image/jpeg",
+      "url": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80",
+      "uploadedAt": "2026-08-16T18:20:36.180Z",
+      "category": "resolution_evidence",
+      "recordId": "INC-000961",
+      "recordType": "incident",
+      "uploadedBy": "Riley Repair"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log-001",
+      "timestamp": "2026-09-18T15:56:36.180Z",
+      "action": "System Health Check",
+      "category": "Telemetry",
+      "status": "Success",
+      "entityType": "system",
+      "performedBy": "Automated Daemon",
+      "details": "Safety monitoring backend verified online with database synchronizer active.",
+      "severity": "info"
+    },
+    {
+      "id": "log-002",
+      "timestamp": "2026-09-15T18:20:36.180Z",
+      "action": "Inception Reported",
+      "category": "Pressure Systems",
+      "status": "Created",
+      "entityId": "INC-001001",
+      "entityType": "inception",
+      "performedBy": "Sara Safety",
+      "details": "Logged boiler room steam relief valve weeping in Sector B.",
+      "severity": "warning"
+    },
+    {
+      "id": "log-003",
+      "timestamp": "2026-09-06T18:20:36.180Z",
+      "action": "Incident Resolved",
+      "category": "Mechanical",
+      "status": "Resolved",
+      "entityId": "INC-000982",
+      "entityType": "incident",
+      "performedBy": "Sara Safety",
+      "details": "Hydraulic pump repair certified with 48-hour resolution duration.",
+      "severity": "success"
+    }
+  ],
+  "findings": [
+    {
+      "id": "f-001",
+      "inspectionId": "INC-001001",
+      "title": "Thermal valve weeping",
+      "description": "Minor steam escape during high throughput cycles.",
+      "likelihood": 4,
+      "severity": 4,
+      "riskScore": 16,
+      "riskLevel": "HIGH",
+      "status": "OPEN",
+      "createdAt": "2026-09-15T18:20:36.180Z"
+    }
+  ],
+  "correctiveActions": [
+    {
+      "id": "ca-001",
+      "findingId": "f-001",
+      "title": "Replace valve gasket seal",
+      "description": "Install graphite-reinforced ring gasket.",
+      "assignedTo": "Riley Repair",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-09-22",
+      "createdAt": "2026-09-15T18:20:36.180Z"
+    }
+  ]
+}
